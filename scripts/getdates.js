@@ -1,3 +1,6 @@
-const full = document.querySelector("#full");
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("currentyear").innerHTML = year;
 
-let nLastModif = Date.parse(document.lastModified);
+let text = document.lastModified;
+document.getElementById("lastModified").innerHTML = text;
