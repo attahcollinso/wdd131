@@ -1,0 +1,107 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", system-ui;
+}
+
+header {
+  background-color: darkorchid;
+  color: #fff;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header div h1 {
+  text-align: center;
+}
+
+header div span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header nav {
+  display: none;
+}
+
+header nav.display {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav a {
+  flex: 1 1 100%;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+header nav a:hover {
+  background-color: darkorchid;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+main h2 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  place-items: center;
+}
+
+.container figure img {
+  width: 100%;
+  height: auto;
+}
+
+.container figure figcaption {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.container figcaption {
+  color: darkorchid;
+}
+
+footer {
+  background: darkorchid;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+.highlighted {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
