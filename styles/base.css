@@ -105,6 +105,7 @@ hr {
   display: flex;
   align-items: flex-start;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .flag img {
@@ -160,13 +161,14 @@ hr {
   margin-left: 20px;
 }
 
-.aside ul li {
+.card ul li {
   margin-bottom: 10px;
+  
 }
 
-.aside ul li a {
-  text-decoration: none;
-  color: #333;
+.card ul li a {
+  text-decoration: underline;
+  color: darkblue;
   transition: color 0.3s;
 }
 
