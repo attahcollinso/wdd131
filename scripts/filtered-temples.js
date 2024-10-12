@@ -126,11 +126,80 @@ const temples = [
   {
     templeName: "London England",
     location: "England, United Kingdom",
-    dedicated: "1958, september, 7",
+    dedicated: "1958, September, 7",
     area: 34000,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/400x250/london-england-temple-lds-650239-wallpaper.jpg"
   },
-
-
+  {
+    templeName: "Sapporo Japan",
+    location: "Sapporo , Japan",
+    dedicated: "2016, August, 21",
+    area: 48480,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/2018/400x250/Sapporo-Japan-Temple01.jpg"
+  },
 ];
+
+createTempleCard(temples);
+
+const h2Text = document.querySelector("h2");
+
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", () => {
+	h2Text.textContent = "Home";
+	createTempleCard(temples);
+});
+
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+	h2Text.textContent = "Old";
+	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) < 2000)));
+});
+
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+	h2Text.textContent = "New";
+	createTempleCard(temples.filter(temple => temple.dedicated.match(/\d{4}/g).some(year => parseInt(year) >= 2000)));
+});
+
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+	h2Text.textContent = "Large"
+	createTempleCard(temples.filter(temple => temple.area >= 90000));
+});
+
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+	h2Text.textContent = "Small"
+	createTempleCard(temples.filter(temple => temple.area <= 10000));
+});
+
+function createTempleCard(filteredTemples) {
+	document.querySelector(".container").innerHTML = "";
+	filteredTemples.forEach(temple => {
+		let card = document.createElement("section");
+		card.className = "temple-card";
+		let name = document.createElement("h3");
+		let location = document.createElement("p");
+		let dedication = document.createElement("p");
+		let area = document.createElement("p");
+		let img = document.createElement("img");
+
+		name.textContent = temple.templeName;
+		location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+		dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+		area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
+		img.setAttribute("src", temple.imageUrl);
+		img.setAttribute("alt", `${temple.templeName} Temple`);
+		img.setAttribute("loading", "lazy");	
+
+		card.appendChild(name);
+		card.appendChild(location);
+		card.appendChild(dedication);
+		card.appendChild(area);
+		card.appendChild(img);
+		
+		document.querySelector(".container").appendChild(card);
+	})
+}
