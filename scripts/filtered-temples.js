@@ -101,7 +101,7 @@ const temples = [
   },
   {
     templeName: "Johannesburg South Africa Temple",
-    location: "Johannesburg, South Afica",
+    location: "Johannesburg, South Africa",
     dedicated: "1985, August, 24",
     area: 19184,
     imageUrl:

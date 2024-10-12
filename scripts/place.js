@@ -40,17 +40,3 @@ windElement.textContent = `${windSpeed} km/h`;
 
 const windChillElement = document.getElementById("windChill");
 windChillElement.textContent = "9.8°C";
-
-
-const date = new Date();
-
-function getCurrentYear(date) {
-  return date.getFullYear();
-}
-
-function getLastModified(date) {
-  return `${new Intl.DateTimeFormat("en-US", {
-    dateStyle: "short",
-  }).format(date)}`;
-}
-
