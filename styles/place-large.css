@@ -53,5 +53,10 @@
     .footer {
       margin-top: -0.5rem;
     }
+
+    .card:nth-of-type(2) .card__title::after {
+      content: url("../images/weather_iconlg.svg");
+      width: 60px;
+    }
   }
   
