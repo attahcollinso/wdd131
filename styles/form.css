@@ -19,6 +19,7 @@
     --color-white: #ffffff;
     --color-background: beige;
     --color-span: orange;
+    --color-required:red;
   }
   
 header, footer {
@@ -173,4 +174,8 @@ textarea {
 
 .wf1 input:required {
     border-bottom: solid 8px var(--color-touch);
+}
+
+.required {
+    color:var(--color-required)
 }
