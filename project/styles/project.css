@@ -1,7 +1,7 @@
 :root {
     --font-text: "Roboto";
     --font-title: "Roboto";
-    --color-primary: blue;
+    --color-primary: rgb(33, 33, 105);
     --color-secondary: red;
     --color-touch: black ;
     --color-white: white;
@@ -23,23 +23,25 @@
 
   .header {
     background-color: var(--color-primary);
-    padding: 50px;
+    padding: 30px;
   }
 
   .nav a {
-    display: flex;
-    float: right;
-    text-align: center;
     color: var(--color-white);
+    padding: 10px;
   }
 
-  .header ul a {
-    display: flex;
-    text-align: center;
-    color: white;
-  }
-  
   .spec strong {
     font-family: "Be+Vietnam+Pro";
     font-weight: 600;
   }
+
+  .footer {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 10px;
+    /* font-size: 1.25rem; */
+    text-align: center;
+    
+  }
+  

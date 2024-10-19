@@ -25,13 +25,11 @@ header, footer {
     background-color: var(--color-primary);
     padding: .5rem 2%;
     text-align: center;
-    font-weight: 700;
     color: var(--color-white);
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -46,7 +44,7 @@ main {
 
 .wf1 {
     padding: 1rem;
-    background-color: #f4f0f7;
+    background-color: #d3ccd9;
     border-radius: 6px;
 } 
 
