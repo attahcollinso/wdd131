@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 64rem; 
+    margin: auto; 
+    
+}
+
+:root {
+    --font-text: "Roboto";
+    --font-title: "Roboto";
+    --color-primary: darkorchid;
+    --color-secondary: #333333;
+    --color-touch: green;
+    --color-white: #ffffff;
+    --color-background: beige;
+    --color-span: orange;
+  }
+  
+header, footer {
+    background-color: var(--color-primary);
+    padding: .5rem 2%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 1rem 0;
+    width: 100%;
+   
+}
+
+.wf1 {
+    padding: 1rem;
+    background-color: #f4f0f7;
+    border-radius: 6px;
+} 
+
+.wf1 fieldset {
+    border: none;
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 450px;
+}
+
+.wf1 legend {
+    display: block;
+    color: black;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+
+.wf1 label {
+    font-weight: bold;
+    display: block;
+    padding: 0 .5rem;
+    font-size: .9rem;
+    color: black;
+}
+
+.wf1 em {
+    padding: 0 .5rem;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    display: block;
+    font-size: .9rem;
+    padding-top: .5rem;
+    color: black;
+    width: 100%;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="date"],
+.wf1 select {
+    background-color: white;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.wf1 input[type="radio"], .wf1 input[type="checkbox"] {
+    margin-right: 6px;
+    margin-left: 0.5rem;
+    width: 24px;
+    height: 24px;
+}
+
+.features label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.wf1 input[type="submit"] {
+    background-color: #eee;
+    border: solid 1px #999;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 0;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.wf1 textarea {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    min-height: 100px;
+}
+
+.wf1 input[type="submit"]:hover {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+#radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+#radio label {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.radio label span {
+    display: flex;
+    align-items: center;
+    color: var(--color-span);
+}   
+
+.wf1 input:required {
+    border-bottom: solid 8px var(--color-touch);
+}

@@ -1,0 +1,45 @@
+:root {
+    --font-text: "Roboto";
+    --font-title: "Roboto";
+    --color-primary: blue;
+    --color-secondary: red;
+    --color-touch: black ;
+    --color-white: white;
+    --color-background: beige;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text);
+    line-height: 1.6;
+    color: var(--color-touch);
+    background-color: var(--color-background);
+  }
+
+  .header {
+    background-color: var(--color-primary);
+    padding: 50px;
+  }
+
+  .nav a {
+    display: flex;
+    float: right;
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .header ul a {
+    display: flex;
+    text-align: center;
+    color: white;
+  }
+  
+  .spec strong {
+    font-family: "Be+Vietnam+Pro";
+    font-weight: 600;
+  }
