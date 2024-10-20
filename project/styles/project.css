@@ -50,6 +50,7 @@
   width: 300px;
   float: right;
   height: 70px;
+  font-size: larger;
 }
 
 ul {
@@ -91,7 +92,7 @@ ul li a:hover {
 
 footer {
   background-color: var(--color-primary);
-  padding: 30px;
+  padding: 37px;
   font-size: 1.25rem;
   text-align: center;
   width: 100%;
@@ -101,4 +102,5 @@ footer p {
   text-align: center;
   color: var(--color-white);
   font-family: "Roboto";
+  font-size: medium;
 }
