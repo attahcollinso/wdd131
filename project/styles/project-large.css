@@ -1,0 +1,11 @@
+@media screen and (min-width: 680px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    header nav {
+      display: flex;
+    }
+  }
