@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A responsive Site Plan layout on the web for web design of my Final project called the Site Plan design.">
+    <meta name="description" content="A responsive Website layout on the web for web design of my Final project called the Final project Website.">
     <meta name="author" content="Attah Collins Onyebuchi">
     <title>BOGT-PSL Security Monthly News</title>
     <link rel="stylesheet" href="styles/project.css">
     <link rel="stylesheet" href="styles/project-large.css">
-    <link rel="stylesheet" href="scripts/project.js">
+    <script defer="" src="scripts/project.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -20,35 +20,33 @@
 
     <header>
         <div>
-          <!-- <h1>Temple Album</h1> -->
-          <h2 class="logo">BOGTPSL<sub>security</sub></h2>
+          <h3 class="logo">BOGT<sub>PSL<sub>security</sub></h3>
           <span id="btnBurguer">☰</span>
         </div>
         <nav id="navBar">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
-          <a href="#">News</a>
-          <a href="#">Appreciation</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fafa-bars"></i></a>
+          <a href="news.html">News</a>
+          <a href="apreciation.html">Appreciation</a>
         </nav>
     </header>
     <main>
         <div class="container">
             <div class="left-column">
                 <section class="team-section">
-                    <h1>Meet Our Security Supervors</h1>
+                    <h1>Meet Our Security Supervisors</h1>
                     <div class="team-members">
                         <figure>
-                            <img src="images/profile.jpg" alt="Onyebuchi Collins">
+                            <img src="images/passport.png" alt="Onyebuchi Collins">
                             <figcaption>Onyebuchi Collins</figcaption>
                         </figure>
                         <figure>
                             <img src="images/hrmanager.jpg" alt="Obinna Chibuike">
-                            <figcaption>Nengi Favor</figcaption>
+                            <figcaption>Obinna Chibuike</figcaption>
                         </figure>
                         <figure>
                             <img src="images/happyworker.avif" alt="Uchenna Justus">
-                            <figcaption>Chiamaka Eucharia</figcaption>
+                            <figcaption>Uchenna Justus</figcaption>
                         </figure>
                     </div>
                 </section>
@@ -63,15 +61,12 @@
                       <input type="text" id="email" name="email" placeholder="email.." required>
                       <h3>Purpose of Message:</h3>
                       <label><input type="radio" name="messagePurpose" value="general" checked>General Inquiry</label>
-                    <label><input type="radio" name="messagePurpose" value="reservation">Personnel Attitude</label>
-                    <label><input type="radio" name="messagePurpose" value="suggestion">Suggestion</label> 
+                        <label><input type="radio" name="messagePurpose" value="reservation">Personnel Attitude</label>
+                        <label><input type="radio" name="messagePurpose" value="suggestion">Suggestion</label> 
                       <textarea id="subject" name="subject" placeholder="Write something.." style="height: 120px"></textarea>
                       <div class="form-group">
-                        <!-- <label>
-                            <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
-                        </label>
-                      </div> -->
-                      <div class="form-group">
+                  
+                    <div class="form-group">
                         <button type="submit" class="submit-button">Submit Message</button>
                     </div>
                     </form>
@@ -80,13 +75,14 @@
             <aside class="contact-details">
                 <h2>Contact Us</h2>
                 <address>
-                    <p><strong>Address:</strong> # 2 Emmanuel Close, Enerco Road Rumukwurusi Pipeline, PortHarcourt Rivers State.</p>
+                    <p><strong>Address:</strong>Bonny Oil and Gas Terminal, Bonny, Rivers State.</p>
                     <p><strong>Phone:</strong> +234 803 7728 338</p>
-                    <p><strong>Email:</strong> <a href="mailto:contact@tremblewatersltd.com">contact@tremblewatersltd.com</a>
+                    <p><strong>Email:</strong> <a href="mailto:contact@bogtpslsecurity.com">contact@bogtpslsecurity.com</a>
                     </p>
                 </address>
-    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.43661391251!2d7.065604973720572!3d4.866276940202545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d299df611163%3A0x38b0e8b85d32b714!2sEnerco%20Engr.%20Road%2C%20Elelenwa%20500102%2C%20Rivers!5e0!3m2!1sen!2sng!4v1712086028372!5m2!1sen!2sng" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="gogglemap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3102.5269683456945!2d7.158115080136797!3d4.436358973185057!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106855f7e3e05e79%3A0x143417319fdb034c!2sBonny%20Oil%20%26%20Gas%20Terminal!5e1!3m2!1sen!2sng!4v1728417282125!5m2!1sen!2sng" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </aside>
         </div>
     </main>
@@ -95,6 +91,18 @@
         <p>&copy;<span id="currentyear"></span> &#128293; Attah collins &#128293; Port Harcourt, Nigeria</p> 
                       
         <p>Last Modified: <span id="lastModified"></span></p>
+
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebookicon.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twittericon.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagramicon.webp" alt="Instagram">
+            </a>
+        </nav>
     </footer>   
 
     </body>

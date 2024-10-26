@@ -30,6 +30,17 @@
 
   .container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+  }
+
+  .contact-form {
+    flex: 2;
+    padding-left: 20px;
+    width: 500px;
+  }
+
+  .hide {
+    display: none;
   }
 }
 
