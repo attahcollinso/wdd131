@@ -153,11 +153,33 @@ main {
   font-size: large;
 }
 
-.team-section {
+/* .team-section {
   margin-bottom: 40px;
-}
+} */
 
 .team-section h1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  place-items: center;
+}
+
+.team-members figure img {
+  width: 150px;
+  height: 200px;
+}
+
+.team-members figure figcaption {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* .team-section h1 {
   color: orange;
   text-align: center;
   padding: 30px;
@@ -175,7 +197,7 @@ main {
 .team-members img {
   width: 150px; 
   height: 160px;
-}
+} */
 
 .contact-details {
   flex: 1;
