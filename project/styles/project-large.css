@@ -1,4 +1,4 @@
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 760px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -32,6 +32,28 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     display: flex;
   }
+
+  .newsletter-signup form {
+    display: inline-block;
+    align-items: center;
+    margin-top: 10px;    
+  }
+
+  .team-members {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  
+  .team-members figure {
+    text-align: center;
+  }
+  
+  .team-members img {
+    width: 200px; 
+    height: 250px;
+    margin-bottom: 10px;
+  } 
 
   .contact-form {
     flex: 2;

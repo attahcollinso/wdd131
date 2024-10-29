@@ -1,12 +1,12 @@
 :root {
     --font-text: "Roboto", system-ui;
     --body-text: "Arial san serif";
-    --color-primary: rgb(25, 25, 91);
-    --color-secondary: red;
-    --color-touch: black ;
-    --color-white: white;
-    --color-background: beige;
-    --color-orange:rgb(235, 187, 98);
+    --color-primary: #19195b;
+    --color-secondary: #96461e;
+    --color-touch: #000000 ;
+    --color-white: #ffffff;
+    --color-background: #f5f5dc;
+    --color-red: #ff0000;
   }
   
   * {
@@ -75,7 +75,7 @@ header nav a {
 } 
 
 .logo {
-  color: var(--color-secondary);
+  color: var(--color-white);
   justify-content: center;
   font-size: 20px;
   font-family: var(--font-text);
@@ -105,14 +105,14 @@ main {
 
 .container-image h3 {
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 1rem;
   position: relative;
   top: 60px;
   text-align: center;
 } 
 
 .required {
-  color:var(--color-secondary)
+  color:var(--color-red)
 }
 
 .newsletter-signup {
@@ -122,12 +122,17 @@ main {
 }
 
 .newsletter-signup form {
-  display: inline-block;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
   margin-top: 10px;
-}
+  border-radius: 15px;
+  background-color: var(--color-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} 
 
 .newsletter-signup .submit:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-secondary);
 }
 
 .newsletter-signup input[type="text"],
@@ -153,8 +158,18 @@ main {
   font-size: large;
 }
 
+.left-column cite, .contact-details cite {
+padding-left: 20px;
+}
+
+.team-section {
+  background-color: var(--color-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
 .team-section h1 {
-  color: orange;
   text-align: center;
   padding: 30px;
 }
@@ -162,7 +177,7 @@ main {
 .team-members {
   display: flex;
   justify-content: space-evenly;
-
+  flex-direction: column;
 }
 
 .team-members figure {
@@ -170,9 +185,9 @@ main {
 }
 
 .team-members img {
-  width: 150px; 
-  height: 160px;
-  flex: auto;
+  width: 100%; 
+  height: auto;
+  margin-bottom: 5px;
 } 
 
 .contact-details {
@@ -180,13 +195,10 @@ main {
   padding-right: 20px;
 }
 
-.contact-details h2 {
-  color: orange;
+.contact-details h2, .contact-form h2.card, .left-column h1, h2 {
+  color: var(--color-secondary);
 }
 
-.contact-form h2 {
-  color: orange;
-}
 
 .card {
   padding: 20px;
@@ -261,7 +273,7 @@ hr {
 }
 
 .contact-form .submit-button:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-secondary);
 }
 
 .form-row {
@@ -304,6 +316,6 @@ footer {
 }
 
 footer p {
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
 }
