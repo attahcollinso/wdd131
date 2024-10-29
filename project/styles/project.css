@@ -285,6 +285,12 @@ hr {
   flex-basis: 48%;
 }
 
+.gogglemap {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
 .container {
   display: block;
   width: 100%;
